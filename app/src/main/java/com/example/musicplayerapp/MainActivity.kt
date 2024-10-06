@@ -21,17 +21,17 @@ class MainActivity : AppCompatActivity() {
 
         mp = MediaPlayer.create(this,R.raw.happyrock)
         mp.start()
-        btnPlay.setImageResource(R.drawable.baseline_pause_chart_24)
+        btnPlay.setImageResource(R.drawable.pause)
 
         btnPlay.setOnClickListener{
 
             if(mp.isPlaying){
 
                 mp.pause()
-                btnPlay.setImageResource(R.drawable.baseline_arrow_right_24)
+                btnPlay.setImageResource(R.drawable.play)
             }else {
                 mp.start()
-                btnPlay.setImageResource(R.drawable.baseline_pause_chart_24)
+                btnPlay.setImageResource(R.drawable.pause)
 
             }
 
